@@ -27,9 +27,10 @@ class Bottom_Activity : AppCompatActivity() {
     private fun setupListener() {
         bottomNav.setOnNavigationItemSelectedListener {
             when (it.itemId){
-                R.id.phone-> viewpager.currentItem=0
+                R.id.balance -> viewpager.currentItem=0
                 R.id.home -> viewpager.currentItem=1
-                R.id.balance -> viewpager.currentItem=2
+                R.id.phone-> viewpager.currentItem=2
+
             }
             return@setOnNavigationItemSelectedListener true
         }

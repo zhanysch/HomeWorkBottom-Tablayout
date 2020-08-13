@@ -8,6 +8,5 @@ import java.sql.RowId
 data class DataModel(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
-    val title : String,
-    val titleTwo : String
+    val title : String
 )
