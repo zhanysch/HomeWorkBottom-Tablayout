@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">TabLayout Bottom 18</string>
     <string name="next">Next</string>
+    <string name="phone">phone</string>
+    <string name="home">home</string>
+    <string name="balance">balance</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
 </resources>

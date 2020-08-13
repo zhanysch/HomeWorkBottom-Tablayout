@@ -1,12 +1,12 @@
-package com.tablayout
+package com.tablayout.OnBoard
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
-import com.tablayout.OnBoard.OnBoardFragment
-import com.tablayout.OnBoard.TabAdapter
+import com.tablayout.BottomNav_Part2exercize.ui.Bottom_Activity
+import com.tablayout.R
 import com.tablayout.data.DataClass
 import kotlinx.android.synthetic.main.activity_main.*
 
