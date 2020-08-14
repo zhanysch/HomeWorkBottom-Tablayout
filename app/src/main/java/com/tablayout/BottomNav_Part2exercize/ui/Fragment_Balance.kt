@@ -14,11 +14,11 @@ import kotlinx.android.synthetic.main.fragment_balacne.*
 
 class Fragment_Balance : BaseFragmentAbstrct() {
     override fun resId() = R.layout.fragment_balacne
-    private var db: AbstDao? =null
+    private var db: AbstDao? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        db= App.app?.getDb()?.getDataModel()
+        db = App.app?.getDb()?.getDataModel()
 
         recycler()
     }
@@ -26,10 +26,9 @@ class Fragment_Balance : BaseFragmentAbstrct() {
     private fun recycler() {
         val adapter = RecycAdapter()
         val data = db?.getdatalive()
-        reclerview.adapter=adapter
+        reclerview.adapter = adapter
         data?.observe(viewLifecycleOwner, Observer {  // auto putting Data
             adapter.update(it)
-
         })
     }
 }

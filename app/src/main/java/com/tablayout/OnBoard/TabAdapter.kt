@@ -6,17 +6,15 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class TabAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdapter(fragmentManager) {
+class TabAdapter(fragmentManager: FragmentManager) : FragmentStatePagerAdapter(fragmentManager) {
     private var list = arrayListOf<Fragment>()
 
-    fun update (data : ArrayList<Fragment>){
-        this.list=data
+    fun update(data: ArrayList<Fragment>) {
+        this.list = data
         notifyDataSetChanged()
     }
 
 
-    override fun getItem(position: Int)=list[position]
-    override fun getCount()=list.size
-
-
+    override fun getItem(position: Int) = list[position]
+    override fun getCount() = list.size
 }

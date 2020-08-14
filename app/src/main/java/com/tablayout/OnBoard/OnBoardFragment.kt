@@ -17,7 +17,7 @@ class OnBoardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_onboard, container, false)
-       }
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -26,18 +26,18 @@ class OnBoardFragment : Fragment() {
 
     private fun setupviews() {
         val data = arguments?.get(DATA_ID) as DataClass
-        tvt2.text=data.textTwo
+        tvt2.text = data.textTwo
         tvt1.text = data.textOne
         image.setImageResource(data.image)
     }
 
-    companion object{
+    companion object {
         const val DATA_ID = "DATA_ID"
 
-        fun getInstance(data : DataClass ): OnBoardFragment {
+        fun getInstance(data: DataClass): OnBoardFragment {
             val fragment = OnBoardFragment()
             val bundle = Bundle()
-            bundle.putParcelable (DATA_ID, data)
+            bundle.putParcelable(DATA_ID, data)
             fragment.arguments = bundle
             return fragment
         }

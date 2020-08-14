@@ -7,7 +7,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
 @Dao
-interface AbstDao{
+interface AbstDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun save(data: DataModel)
 
