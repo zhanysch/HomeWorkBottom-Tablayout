@@ -16,9 +16,7 @@ class Bottom_Activity : AppCompatActivity() {
 
 
     private fun setupBottomNav() {
-        val adapter= ViewPagerAdapter(
-            supportFragmentManager
-        )
+        val adapter= ViewPagerAdapter(supportFragmentManager)
         viewpager.adapter=adapter
         adapter.addFragment(Fragment_Balance()) // addFragment funct from ViewpagerAdapter
         adapter.addFragment(Fragment_Phone())

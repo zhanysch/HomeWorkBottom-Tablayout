@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, Bottom_Activity::class.java))  //
                 finish()
             } else {
-                OnviewPage.currentItem += 1
+                OnviewPage.currentItem += 1  //OnviewPage Viewpager id xml
             }
         }
     }
@@ -56,11 +56,11 @@ class MainActivity : AppCompatActivity() {
         val adapter = TabAdapter(supportFragmentManager)
         OnviewPage.adapter = adapter
 
-        list.add(OnBoardFragment.getInstance(DataClass(R.drawable.image_ic, "", "japan")))
+        list.add(OnBoardFragment.getInstance(DataClass(R.drawable.image_ic, "", "japan")))  //getInstance from OnBoardFragment
         list.add(OnBoardFragment.getInstance(DataClass(R.drawable.sary_chelek, "", "kyrgyzstan")))
         list.add(OnBoardFragment.getInstance(DataClass(R.drawable.ic_norw, "", "norway")))
         list.add(OnBoardFragment.getInstance(DataClass(R.drawable.home_down, "", "unknown")))
         adapter.update(list)
-        OnTabLT.setupWithViewPager(OnviewPage)
+        OnTabLT.setupWithViewPager(OnviewPage)  // OnTabLT id TabLayout
     }
 }
